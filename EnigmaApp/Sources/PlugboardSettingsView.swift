@@ -39,6 +39,18 @@ struct PlugboardSettingsView: View {
                 }
             }
             .padding()
+
+            if !plugboardWarnings.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    ForEach(plugboardWarnings, id: \.self) { warning in
+                        Label(warning, systemImage: "exclamationmark.triangle.fill")
+                            .font(.footnote)
+                            .foregroundStyle(.orange)
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.bottom, 8)
+            }
         }
         .navigationTitle("Pannello a prese")
         .safeAreaInset(edge: .bottom) {
@@ -49,5 +61,11 @@ struct PlugboardSettingsView: View {
                 .frame(maxWidth: .infinity)
                 .background(.bar)
         }
+        .onDisappear { model.persistSettings() }
+    }
+
+    /// Avvisi relativi alla plugboard (lettere duplicate tra cavi).
+    private var plugboardWarnings: [String] {
+        model.validationWarnings.filter { $0.hasPrefix("Lettera") }
     }
 }

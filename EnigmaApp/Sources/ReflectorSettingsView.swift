@@ -21,5 +21,6 @@ struct ReflectorSettingsView: View {
             }
         }
         .navigationTitle("Riflettore")
+        .onDisappear { model.persistSettings() }
     }
 }

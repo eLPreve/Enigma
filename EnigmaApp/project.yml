@@ -6,7 +6,7 @@ options:
   createIntermediateGroups: true
 packages:
   EnigmaCore:
-    path: ../EnigmaIOS
+    path: ../EnigmaCore
 settings:
   base:
     SWIFT_VERSION: "5.9"
@@ -30,6 +30,18 @@ targets:
         CODE_SIGN_STYLE: Automatic
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0"
+  EnigmaUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: UITests
+    dependencies:
+      - target: Enigma
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.elpreve.enigma.uitests
 schemes:
   Enigma:
     build:
@@ -37,3 +49,7 @@ schemes:
         Enigma: all
     run:
       config: Debug
+    test:
+      config: Debug
+      targets:
+        - EnigmaUITests

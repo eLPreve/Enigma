@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct EnigmaApp: App {
@@ -9,5 +10,6 @@ struct EnigmaApp: App {
             ContentView()
                 .environment(model)
         }
+        .modelContainer(for: MessageRecord.self)
     }
 }

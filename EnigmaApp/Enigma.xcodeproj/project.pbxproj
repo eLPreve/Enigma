@@ -8,24 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		0494803B46A4E9F163E192A6 /* EnigmaAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */; };
+		05FBD24503D8267851C93939 /* EnigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB05F8984662816ED566084 /* EnigmaUITests.swift */; };
 		38ACB3E8BA1251678B097255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF419098CF63C488EFFC86 /* ContentView.swift */; };
 		4B8A3284FF4BCE2221BC0DB1 /* EnigmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB4C14A7647DCD86D57C06 /* EnigmaApp.swift */; };
+		5EDFA032F10610D1A041F2DC /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D6B94C480AE40BAE01BA7 /* MessagesView.swift */; };
+		7DE5B254A6333A99A5341187 /* MessageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08710A588F8C4468F292F93 /* MessageRecord.swift */; };
+		80C64613B4CFB0E032597D19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5324217AA618465DBC26932B /* Localizable.strings */; };
 		829BF75E7BC435C046CF74F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16AF19C8CCD23C8503FF896 /* Assets.xcassets */; };
 		A1A418E9969F977DD8B865FE /* ReflectorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA42294527AAC679F10AF7F /* ReflectorSettingsView.swift */; };
 		B266868A1EC29CF2FC8E3AD8 /* EnigmaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6BA25E943A0308B48455583F /* EnigmaCore */; };
+		CEC506ED1277BD429C195CCA /* MachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E68D6A28E20CCF58C5192 /* MachineView.swift */; };
 		F3984D3EAB1BCB8DF4BD2441 /* RotorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259FEA5CB56BC0904BCB087D /* RotorSettingsView.swift */; };
 		F69F7DD52E10A126617F9DB6 /* PlugboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A393B82C74BFCB15D6F89B /* PlugboardSettingsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9723A7E71DAFFCE590619F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A3CBE283DD992AEB7B638C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92706505C5559C006C58A76;
+			remoteInfo = Enigma;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01A393B82C74BFCB15D6F89B /* PlugboardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlugboardSettingsView.swift; sourceTree = "<group>"; };
 		0ACD875010FEF69170EFDFB5 /* Enigma.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		259FEA5CB56BC0904BCB087D /* RotorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotorSettingsView.swift; sourceTree = "<group>"; };
-		3BB7069BF51D99692172B244 /* EnigmaIOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EnigmaIOS; path = ../EnigmaIOS; sourceTree = SOURCE_ROOT; };
+		4DB05F8984662816ED566084 /* EnigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaUITests.swift; sourceTree = "<group>"; };
+		76670A5A5F98BCACB28263DD /* EnigmaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EnigmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780809BC580EF5D988562166 /* EnigmaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EnigmaCore; path = ../EnigmaCore; sourceTree = SOURCE_ROOT; };
+		7D4E68D6A28E20CCF58C5192 /* MachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineView.swift; sourceTree = "<group>"; };
 		A1BB4C14A7647DCD86D57C06 /* EnigmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaApp.swift; sourceTree = "<group>"; };
+		A302A949D5ABA0C2497BDDD4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C08710A588F8C4468F292F93 /* MessageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRecord.swift; sourceTree = "<group>"; };
+		D05D6B94C480AE40BAE01BA7 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		D5FF419098CF63C488EFFC86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBA42294527AAC679F10AF7F /* ReflectorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectorSettingsView.swift; sourceTree = "<group>"; };
 		E16AF19C8CCD23C8503FF896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDD098EE5EB6FA42EF0E5A9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaAppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,10 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E1256D9609346960CD8DE0 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DB05F8984662816ED566084 /* EnigmaUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		0D3E89649A3A3E37D064F032 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3BB7069BF51D99692172B244 /* EnigmaIOS */,
+				780809BC580EF5D988562166 /* EnigmaCore */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -56,9 +86,13 @@
 				D5FF419098CF63C488EFFC86 /* ContentView.swift */,
 				A1BB4C14A7647DCD86D57C06 /* EnigmaApp.swift */,
 				F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */,
+				7D4E68D6A28E20CCF58C5192 /* MachineView.swift */,
+				C08710A588F8C4468F292F93 /* MessageRecord.swift */,
+				D05D6B94C480AE40BAE01BA7 /* MessagesView.swift */,
 				01A393B82C74BFCB15D6F89B /* PlugboardSettingsView.swift */,
 				DBA42294527AAC679F10AF7F /* ReflectorSettingsView.swift */,
 				259FEA5CB56BC0904BCB087D /* RotorSettingsView.swift */,
+				5324217AA618465DBC26932B /* Localizable.strings */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -68,6 +102,7 @@
 			children = (
 				0D3E89649A3A3E37D064F032 /* Packages */,
 				5594FFA497E5B3400744C61D /* Sources */,
+				00E1256D9609346960CD8DE0 /* UITests */,
 				86CF7E80C9BD40BD75916BD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACD875010FEF69170EFDFB5 /* Enigma.app */,
+				76670A5A5F98BCACB28263DD /* EnigmaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +119,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5E186EF8AFCBAC8EA20224D1 /* EnigmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5B3793A9E8BD50E74328B4 /* Build configuration list for PBXNativeTarget "EnigmaUITests" */;
+			buildPhases = (
+				6BA66E0DFFE308E0F500E6BD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2BBBA900EFBC96B9D3EFDB /* PBXTargetDependency */,
+			);
+			name = EnigmaUITests;
+			packageProductDependencies = (
+			);
+			productName = EnigmaUITests;
+			productReference = 76670A5A5F98BCACB28263DD /* EnigmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A92706505C5559C006C58A76 /* Enigma */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03E0ED74296CA16E349AAFC4 /* Build configuration list for PBXNativeTarget "Enigma" */;
@@ -112,6 +166,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5E186EF8AFCBAC8EA20224D1 = {
+						TestTargetID = A92706505C5559C006C58A76;
+					};
 					A92706505C5559C006C58A76 = {
 						ProvisioningStyle = Automatic;
 					};
@@ -123,11 +180,12 @@
 			knownRegions = (
 				Base,
 				en,
+				it,
 			);
 			mainGroup = 5ADF405E76E07A947264A510;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				02BC824C703C8A92B8F653A4 /* XCLocalSwiftPackageReference "../EnigmaIOS" */,
+				61D24DEB26B0A30E6C099DF1 /* XCLocalSwiftPackageReference "../EnigmaCore" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 86CF7E80C9BD40BD75916BD8 /* Products */;
@@ -135,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				A92706505C5559C006C58A76 /* Enigma */,
+				5E186EF8AFCBAC8EA20224D1 /* EnigmaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,12 +204,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				829BF75E7BC435C046CF74F6 /* Assets.xcassets in Resources */,
+				80C64613B4CFB0E032597D19 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6BA66E0DFFE308E0F500E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FBD24503D8267851C93939 /* EnigmaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECCE2CA6F6C5D9D70B7B59E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +226,9 @@
 				38ACB3E8BA1251678B097255 /* ContentView.swift in Sources */,
 				4B8A3284FF4BCE2221BC0DB1 /* EnigmaApp.swift in Sources */,
 				0494803B46A4E9F163E192A6 /* EnigmaAppModel.swift in Sources */,
+				CEC506ED1277BD429C195CCA /* MachineView.swift in Sources */,
+				7DE5B254A6333A99A5341187 /* MessageRecord.swift in Sources */,
+				5EDFA032F10610D1A041F2DC /* MessagesView.swift in Sources */,
 				F69F7DD52E10A126617F9DB6 /* PlugboardSettingsView.swift in Sources */,
 				A1A418E9969F977DD8B865FE /* ReflectorSettingsView.swift in Sources */,
 				F3984D3EAB1BCB8DF4BD2441 /* RotorSettingsView.swift in Sources */,
@@ -165,6 +236,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2BBBA900EFBC96B9D3EFDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92706505C5559C006C58A76 /* Enigma */;
+			targetProxy = D9723A7E71DAFFCE590619F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5324217AA618465DBC26932B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD098EE5EB6FA42EF0E5A9F /* en */,
+				A302A949D5ABA0C2497BDDD4 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		152AEE2417BCA4990CC7BE50 /* Debug */ = {
@@ -187,6 +278,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elpreve.enigma;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81EBB4BDFE5C1D1608ACABBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpreve.enigma.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Enigma;
 			};
 			name = Debug;
 		};
@@ -252,6 +361,24 @@
 				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
+		};
+		BB2DCB7FA4F12A2A46EA222D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpreve.enigma.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Enigma;
+			};
+			name = Release;
 		};
 		BE71D5CBC7BB76856E227E16 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -344,6 +471,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		1A5B3793A9E8BD50E74328B4 /* Build configuration list for PBXNativeTarget "EnigmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EBB4BDFE5C1D1608ACABBA /* Debug */,
+				BB2DCB7FA4F12A2A46EA222D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		FFD99AFC4EC35BECFD8CCCBB /* Build configuration list for PBXProject "Enigma" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -356,9 +492,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		02BC824C703C8A92B8F653A4 /* XCLocalSwiftPackageReference "../EnigmaIOS" */ = {
+		61D24DEB26B0A30E6C099DF1 /* XCLocalSwiftPackageReference "../EnigmaCore" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../EnigmaIOS;
+			relativePath = ../EnigmaCore;
 		};
 /* End XCLocalSwiftPackageReference section */
 

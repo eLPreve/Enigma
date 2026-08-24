@@ -34,12 +34,38 @@ struct RotorSettingsView: View {
                 }
             }
 
+            Section("Ring settings (Ringstellung)") {
+                ForEach(0..<3, id: \.self) { index in
+                    Picker("Rotore \(index + 1)", selection: $model.ringSettings[index]) {
+                        ForEach(0..<26, id: \.self) { i in
+                            Text(positionLabels[i]).tag(i + 1)
+                        }
+                    }
+                }
+            }
+
             Section {
-                Text("Nota: questo porting replica il comportamento dell'app originale (il primo rotore dell'ordine è quello che scatta a ogni lettera). I miglioramenti di fedeltà storica arriveranno in seguito.")
+                Text("Il motore replica la Enigma M3 reale: i rotori hanno un intaglio (I→Q, II→E, III→V, IV→J, V→Z) che fa avanzare il rotore successivo, con double stepping. Il ring setting (Ringstellung) sposta l'intaglio e il cablaggio rispetto all'alfabeto.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }
+
+            if !rotorWarnings.isEmpty {
+                Section {
+                    ForEach(rotorWarnings, id: \.self) { warning in
+                        Label(warning, systemImage: "exclamationmark.triangle.fill")
+                            .font(.footnote)
+                            .foregroundStyle(.orange)
+                    }
+                }
+            }
         }
         .navigationTitle("Rotori")
+        .onDisappear { model.persistSettings() }
+    }
+
+    /// Avvisi relativi all'ordine dei rotori (rotori selezionati più volte).
+    private var rotorWarnings: [String] {
+        model.validationWarnings.filter { $0.hasPrefix("Rotore") }
     }
 }

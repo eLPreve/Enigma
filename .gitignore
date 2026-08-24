@@ -1,6 +1,6 @@
 # ============================================================
 # Enigma — repository root .gitignore
-# Copre la tesina e il progetto Android (MyApplication/)
+# Copre gli strumenti di sviluppo
 # ============================================================
 
 # --- macOS ---
@@ -9,6 +9,9 @@
 # --- Swift Package Manager ---
 .build/
 .swiftpm/
+
+# --- Python (strumenti di validazione di EnigmaCore/Tools) ---
+.venv/
 
 # --- Xcode ---
 xcuserdata/
