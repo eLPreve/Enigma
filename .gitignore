@@ -10,6 +10,11 @@
 .build/
 .swiftpm/
 
+# --- Xcode ---
+xcuserdata/
+*.xcuserstate
+DerivedData/
+
 # --- Gradle / build output ---
 .gradle/
 build/
