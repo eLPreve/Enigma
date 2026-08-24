@@ -6,6 +6,10 @@
 # --- macOS ---
 .DS_Store
 
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+
 # --- Gradle / build output ---
 .gradle/
 build/
