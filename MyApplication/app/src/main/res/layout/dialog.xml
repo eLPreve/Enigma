@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+
+        >
+        <TextView
+            android:textColor="#000"
+            android:text="Clear_Text:"
+            android:layout_gravity="left"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:id="@+id/infClr"
+            android:textIsSelectable="true" />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+
+        >
+        <TextView
+            android:textColor="#000"
+            android:text="Cript_Text:"
+            android:layout_gravity="left"
+            />
+        <TextView
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:id="@+id/infCip"
+            android:textIsSelectable="true" />
+    </TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+
+    >
+    <TextView
+        android:textColor="#000"
+        android:text="Rotor_Order:"
+        android:layout_gravity="left"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="right"
+        android:id="@+id/infOrd"
+        android:textIsSelectable="true" />
+</TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+
+    >
+    <TextView
+        android:textColor="#000"
+        android:text="Rotor_Position:"
+        android:layout_gravity="left"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="right"
+        android:id="@+id/infPos"
+        android:textIsSelectable="true" />
+</TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+
+    >
+    <TextView
+        android:textColor="#000"
+        android:text="Switcher:"
+        android:layout_gravity="left"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="right"
+        android:id="@+id/infSwi"
+        android:textIsSelectable="true" />
+</TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <TextView
+        android:textColor="#000"
+        android:text="Reflector:"
+        android:layout_gravity="left"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="right"
+        android:id="@+id/infRef"
+        android:textIsSelectable="true" />
+</TableRow>
+</TableLayout>

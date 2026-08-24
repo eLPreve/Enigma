@@ -1,0 +1,29 @@
+# ============================================================
+# Enigma — repository root .gitignore
+# Copre la tesina e il progetto Android (MyApplication/)
+# ============================================================
+
+# --- macOS ---
+.DS_Store
+
+# --- Gradle / build output ---
+.gradle/
+build/
+/build
+/captures
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+
+# --- Android local configuration (percorso SDK, specifico per macchina) ---
+local.properties
+
+# --- IDE (Android Studio / IntelliJ) ---
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
