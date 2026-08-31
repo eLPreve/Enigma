@@ -50,6 +50,17 @@ final class EnigmaAppModel {
     /// Lettere mostrate nelle finestrelle dei rotori (veloce → lento).
     var rotorDisplay: [Character] { machine.display }
 
+    // MARK: - Etichette riassuntive (condivise tra le schermate)
+
+    /// Ordine dei rotori in numeri romani, es. "I → II → III".
+    var rotorsLabel: String { rotorOrder.map { Self.roman($0) }.joined(separator: " → ") }
+    /// Posizioni iniziali come lettere, es. "A A A".
+    var positionsLabel: String { positions.map { String(UnicodeScalar($0 + 64)!) }.joined(separator: " ") }
+    /// Ring settings come lettere, es. "A A A".
+    var ringsLabel: String { ringSettings.map { String(UnicodeScalar($0 + 64)!) }.joined(separator: " ") }
+    /// Numero di cavi attivi nella plugboard.
+    var activePlugboardCount: Int { plugboard.filter { $0.first != $0.second }.count }
+
     // MARK: - Configurazione per il motore
 
     var configuration: EnigmaConfiguration {

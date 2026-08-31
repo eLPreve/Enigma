@@ -10,11 +10,14 @@
 		0494803B46A4E9F163E192A6 /* EnigmaAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */; };
 		05FBD24503D8267851C93939 /* EnigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB05F8984662816ED566084 /* EnigmaUITests.swift */; };
 		38ACB3E8BA1251678B097255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF419098CF63C488EFFC86 /* ContentView.swift */; };
+		3A9183BEFCFC150418C2028B /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD919E6F1C31B100FCBBE7 /* RootTabView.swift */; };
 		4B8A3284FF4BCE2221BC0DB1 /* EnigmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB4C14A7647DCD86D57C06 /* EnigmaApp.swift */; };
 		5EDFA032F10610D1A041F2DC /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D6B94C480AE40BAE01BA7 /* MessagesView.swift */; };
 		7DE5B254A6333A99A5341187 /* MessageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08710A588F8C4468F292F93 /* MessageRecord.swift */; };
 		80C64613B4CFB0E032597D19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5324217AA618465DBC26932B /* Localizable.strings */; };
 		829BF75E7BC435C046CF74F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16AF19C8CCD23C8503FF896 /* Assets.xcassets */; };
+		8E18821CE010358B862BE939 /* MessagesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15980C432C4646A091414905 /* MessagesTabView.swift */; };
+		9DF6A7E61533765C6F17B960 /* ConfigurationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB361086332A82AFA3608 /* ConfigurationTabView.swift */; };
 		A1A418E9969F977DD8B865FE /* ReflectorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA42294527AAC679F10AF7F /* ReflectorSettingsView.swift */; };
 		B266868A1EC29CF2FC8E3AD8 /* EnigmaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6BA25E943A0308B48455583F /* EnigmaCore */; };
 		CEC506ED1277BD429C195CCA /* MachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E68D6A28E20CCF58C5192 /* MachineView.swift */; };
@@ -35,7 +38,9 @@
 /* Begin PBXFileReference section */
 		01A393B82C74BFCB15D6F89B /* PlugboardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlugboardSettingsView.swift; sourceTree = "<group>"; };
 		0ACD875010FEF69170EFDFB5 /* Enigma.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15980C432C4646A091414905 /* MessagesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTabView.swift; sourceTree = "<group>"; };
 		259FEA5CB56BC0904BCB087D /* RotorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotorSettingsView.swift; sourceTree = "<group>"; };
+		33CDB361086332A82AFA3608 /* ConfigurationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTabView.swift; sourceTree = "<group>"; };
 		4DB05F8984662816ED566084 /* EnigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaUITests.swift; sourceTree = "<group>"; };
 		76670A5A5F98BCACB28263DD /* EnigmaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EnigmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780809BC580EF5D988562166 /* EnigmaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EnigmaCore; path = ../EnigmaCore; sourceTree = SOURCE_ROOT; };
@@ -49,6 +54,7 @@
 		E16AF19C8CCD23C8503FF896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD098EE5EB6FA42EF0E5A9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaAppModel.swift; sourceTree = "<group>"; };
+		F7BD919E6F1C31B100FCBBE7 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +89,17 @@
 			isa = PBXGroup;
 			children = (
 				E16AF19C8CCD23C8503FF896 /* Assets.xcassets */,
+				33CDB361086332A82AFA3608 /* ConfigurationTabView.swift */,
 				D5FF419098CF63C488EFFC86 /* ContentView.swift */,
 				A1BB4C14A7647DCD86D57C06 /* EnigmaApp.swift */,
 				F354CA4BF5F9C47C2490D13E /* EnigmaAppModel.swift */,
 				7D4E68D6A28E20CCF58C5192 /* MachineView.swift */,
 				C08710A588F8C4468F292F93 /* MessageRecord.swift */,
+				15980C432C4646A091414905 /* MessagesTabView.swift */,
 				D05D6B94C480AE40BAE01BA7 /* MessagesView.swift */,
 				01A393B82C74BFCB15D6F89B /* PlugboardSettingsView.swift */,
 				DBA42294527AAC679F10AF7F /* ReflectorSettingsView.swift */,
+				F7BD919E6F1C31B100FCBBE7 /* RootTabView.swift */,
 				259FEA5CB56BC0904BCB087D /* RotorSettingsView.swift */,
 				5324217AA618465DBC26932B /* Localizable.strings */,
 			);
@@ -223,14 +232,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF6A7E61533765C6F17B960 /* ConfigurationTabView.swift in Sources */,
 				38ACB3E8BA1251678B097255 /* ContentView.swift in Sources */,
 				4B8A3284FF4BCE2221BC0DB1 /* EnigmaApp.swift in Sources */,
 				0494803B46A4E9F163E192A6 /* EnigmaAppModel.swift in Sources */,
 				CEC506ED1277BD429C195CCA /* MachineView.swift in Sources */,
 				7DE5B254A6333A99A5341187 /* MessageRecord.swift in Sources */,
+				8E18821CE010358B862BE939 /* MessagesTabView.swift in Sources */,
 				5EDFA032F10610D1A041F2DC /* MessagesView.swift in Sources */,
 				F69F7DD52E10A126617F9DB6 /* PlugboardSettingsView.swift in Sources */,
 				A1A418E9969F977DD8B865FE /* ReflectorSettingsView.swift in Sources */,
+				3A9183BEFCFC150418C2028B /* RootTabView.swift in Sources */,
 				F3984D3EAB1BCB8DF4BD2441 /* RotorSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

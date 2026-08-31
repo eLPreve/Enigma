@@ -9,14 +9,18 @@ EnigmaApp/
 ├── Enigma.xcodeproj             # progetto generato (versionato)
 └── Sources/
     ├── EnigmaApp.swift          # entry point + ModelContainer SwiftData
+    ├── RootTabView.swift        # TabView (Macchina, Configurazione, Archivio)
     ├── EnigmaAppModel.swift     # stato condiviso @Observable
-    ├── ContentView.swift        # schermata principale
+    ├── ContentView.swift        # tab Macchina
     ├── MachineView.swift        # rotori + lampboard
+    ├── ConfigurationTabView.swift
     ├── RotorSettingsView.swift  # ordine, posizioni, ring settings
     ├── PlugboardSettingsView.swift
     ├── ReflectorSettingsView.swift
     ├── MessageRecord.swift      # modello SwiftData
-    ├── MessagesView.swift       # archivio messaggi
+    ├── MessagesTabView.swift    # tab Archivio
+    ├── MessagesView.swift       # elenco messaggi
+    ├── it.lproj/ en.lproj/      # localizzazione
     └── Assets.xcassets
 ```
 
@@ -69,15 +73,26 @@ schermate e al cambio del toggle): `didSet` non è utilizzabile sulle proprietà
 
 ---
 
+## Struttura a tab
+
+L'app è organizzata con una **TabView** (barra in basso, pattern iOS classico):
+
+- **Macchina** (`ContentView`): la macchina interattiva e i testi;
+- **Configurazione** (`ConfigurationTabView`): riepilogo, accesso alle
+  schermate di dettaglio e avvisi di validazione;
+- **Archivio** (`MessagesTabView`): i messaggi salvati; caricandone uno si
+  torna automaticamente alla tab Macchina.
+
+`RootTabView` definisce i tab e lo stato di selezione (`AppTab`).
+
 ## `ContentView.swift`
 
-**Cosa fa**: schermata principale. Mostra (in un `Form`):
+**Cosa fa**: tab Macchina. Mostra (in un `Form`):
 
 1. la **macchina** (`MachineView`): rotori + lampboard;
 2. il campo **testo in chiaro** (filtra a A–Z maiuscole, aggiornamento live);
 3. il **testo cifrato** (selezionabile), toggle "Blocchi da 5", `ShareLink`;
-4. pulsanti "Usa come testo in chiaro" (decifra) e "Pulisci";
-5. la **Configurazione** (riepilogo + link alle impostazioni e all'archivio).
+4. pulsanti "Usa come testo in chiaro" (decifra) e "Pulisci".
 
 **Come funziona**: legge il modello dall'ambiente; `.onAppear` richiama
 `updateLive()` per sincronizzare la macchina (es. dopo un cambio impostazioni);

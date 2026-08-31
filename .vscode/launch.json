@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Enigma}/EnigmaCore",
+            "name": "Debug EnigmaCLI (EnigmaCore)",
+            "target": "EnigmaCLI",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug EnigmaCLI (EnigmaCore)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Enigma}/EnigmaCore",
+            "name": "Release EnigmaCLI (EnigmaCore)",
+            "target": "EnigmaCLI",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release EnigmaCLI (EnigmaCore)"
+        }
+    ]
+}

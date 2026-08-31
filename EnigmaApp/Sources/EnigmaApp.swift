@@ -7,7 +7,7 @@ struct EnigmaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
                 .environment(model)
         }
         .modelContainer(for: MessageRecord.self)

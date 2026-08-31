@@ -34,14 +34,17 @@ EnigmaApp/
 ├── Enigma.xcodeproj             # progetto generato (versionato)
 ├── Sources/
 │   ├── EnigmaApp.swift          # entry point (@main) + ModelContainer SwiftData
+│   ├── RootTabView.swift        # struttura a tab (Macchina, Configurazione, Archivio)
 │   ├── EnigmaAppModel.swift     # stato condiviso @Observable + persistenza config
-│   ├── ContentView.swift        # schermata principale (macchina + testi)
+│   ├── ContentView.swift        # tab Macchina (macchina + testi)
 │   ├── MachineView.swift        # rotori + lampboard interattiva
+│   ├── ConfigurationTabView.swift  # tab Configurazione (riepilogo + link)
 │   ├── RotorSettingsView.swift  # ordine, posizioni, ring settings
 │   ├── PlugboardSettingsView.swift
 │   ├── ReflectorSettingsView.swift
 │   ├── MessageRecord.swift      # modello SwiftData (messaggio salvato)
-│   ├── MessagesView.swift       # archivio messaggi salvati
+│   ├── MessagesTabView.swift    # tab Archivio (messaggi salvati)
+│   ├── MessagesView.swift       # elenco messaggi salvati
 │   ├── it.lproj/ en.lproj/      # Localizable.strings (italiano, inglese)
 │   └── Assets.xcassets
 └── UITests/
@@ -57,6 +60,7 @@ xcodebuild test -project Enigma.xcodeproj -scheme Enigma \
 
 ## Funzioni
 
+- **Struttura a tab** (pattern iOS classico): *Macchina*, *Configurazione*, *Archivio*.
 - **Macchina reale interattiva**: rotori (finestrelle) e lampboard a 26 tasti,
   cifratura in tempo reale mentre digiti.
 - **Motore M3 storicamente fedele** (`EnigmaCore`): intagli (turnover), double

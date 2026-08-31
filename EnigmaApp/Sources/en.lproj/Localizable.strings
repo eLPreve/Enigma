@@ -24,6 +24,12 @@
 "Pannello a prese" = "Plugboard";
 "Messaggi salvati" = "Saved messages";
 
+/* Tab */
+"Macchina" = "Machine";
+"Archivio" = "Archive";
+"Impostazioni" = "Settings";
+"Riepilogo" = "Summary";
+
 /* RotorSettingsView */
 "Ordine dei rotori (veloce → lento)" = "Rotor order (fast → slow)";
 "Rotore %lld" = "Rotor %lld";

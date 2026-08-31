@@ -48,4 +48,20 @@ final class EnigmaUITests: XCTestCase {
         let field = app.textFields["plaintextField"]
         XCTAssertEqual(field.value as? String, "A")
     }
+
+    @MainActor
+    func testTabBarSwitchingKeepsAppResponsive() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        let tabs = app.tabBars.buttons
+        XCTAssertTrue(tabs.count >= 2, "La barra delle tab deve avere almeno 2 voci")
+
+        // Vai alla tab Configurazione (indice 1) e poi torna alla Macchina (indice 0).
+        tabs.element(boundBy: 1).tap()
+        tabs.element(boundBy: 0).tap()
+
+        let field = app.textFields["plaintextField"]
+        XCTAssertTrue(field.waitForExistence(timeout: 3))
+    }
 }

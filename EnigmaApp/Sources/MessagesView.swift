@@ -12,6 +12,9 @@ struct MessagesView: View {
     @Environment(EnigmaAppModel.self) private var model
     @Query(sort: \MessageRecord.date, order: .reverse) private var records: [MessageRecord]
 
+    /// Chiamata dopo il caricamento di un messaggio (es. per tornare alla tab Macchina).
+    var onApply: (() -> Void)?
+
     var body: some View {
         List {
             ForEach(records) { record in
@@ -62,7 +65,11 @@ struct MessagesView: View {
 
     private func load(_ record: MessageRecord) {
         model.apply(record)
-        dismiss()
+        if let onApply {
+            onApply()
+        } else {
+            dismiss()
+        }
     }
 
     private func delete(at offsets: IndexSet) {

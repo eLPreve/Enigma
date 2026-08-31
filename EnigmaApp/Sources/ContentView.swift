@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// Schermata principale: la "macchina reale" (rotori + lampboard), i testi in
-/// chiaro/cifrato, la condivisione e l'accesso alle impostazioni e all'archivio.
+/// Tab "Macchina": la macchina reale (rotori + lampboard) e i testi in
+/// chiaro/cifrato. Le impostazioni e l'archivio sono nelle altre tab.
 struct ContentView: View {
     @Environment(EnigmaAppModel.self) private var model
 
@@ -65,31 +65,6 @@ struct ContentView: View {
                     Button("Pulisci", action: model.clear)
                         .frame(maxWidth: .infinity)
                 }
-
-                if !model.validationWarnings.isEmpty {
-                    Section {
-                        ForEach(model.validationWarnings, id: \.self) { warning in
-                            Label(warning, systemImage: "exclamationmark.triangle.fill")
-                                .font(.footnote)
-                                .foregroundStyle(.orange)
-                        }
-                    } header: {
-                        Text("Configurazione non valida")
-                    }
-                }
-
-                Section("Configurazione") {
-                    LabeledContent("Ordine rotori", value: rotorsLabel)
-                    LabeledContent("Posizioni", value: positionsLabel)
-                    LabeledContent("Anelli (ring)", value: ringsLabel)
-                    LabeledContent("Riflettore", value: model.reflector)
-                    LabeledContent("Cavi plugboard", value: "\(activePlugboardPairs)/10")
-
-                    NavigationLink("Rotori") { RotorSettingsView() }
-                    NavigationLink("Pannello a prese") { PlugboardSettingsView() }
-                    NavigationLink("Riflettore") { ReflectorSettingsView() }
-                    NavigationLink("Messaggi salvati") { MessagesView() }
-                }
             }
             .navigationTitle("Enigma")
             .onAppear { model.updateLive() }
@@ -97,38 +72,16 @@ struct ContentView: View {
         }
     }
 
-    // MARK: - Etichette riassuntive
-
-    private var rotorsLabel: String {
-        model.rotorOrder.map { roman($0) }.joined(separator: " → ")
-    }
-
-    private var positionsLabel: String {
-        model.positions.map { String(UnicodeScalar($0 + 64)!) }.joined(separator: " ")
-    }
-
-    private var ringsLabel: String {
-        model.ringSettings.map { String(UnicodeScalar($0 + 64)!) }.joined(separator: " ")
-    }
-
-    private var activePlugboardPairs: Int {
-        model.plugboard.filter { $0.first != $0.second }.count
-    }
-
     private var shareText: String {
         String(
             format: String(localized: "share.template"),
             model.plaintext,
             model.ciphertext,
-            rotorsLabel,
-            positionsLabel,
-            ringsLabel,
+            model.rotorsLabel,
+            model.positionsLabel,
+            model.ringsLabel,
             model.reflector,
-            "\(activePlugboardPairs)/10"
+            "\(model.activePlugboardCount)/10"
         )
-    }
-
-    private func roman(_ s: String) -> String {
-        ["1": "I", "2": "II", "3": "III", "4": "IV", "5": "V"][s] ?? s
     }
 }

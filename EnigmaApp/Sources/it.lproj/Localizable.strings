@@ -25,6 +25,12 @@
 "Pannello a prese" = "Pannello a prese";
 "Messaggi salvati" = "Messaggi salvati";
 
+/* Tab */
+"Macchina" = "Macchina";
+"Archivio" = "Archivio";
+"Impostazioni" = "Impostazioni";
+"Riepilogo" = "Riepilogo";
+
 /* RotorSettingsView */
 "Ordine dei rotori (veloce → lento)" = "Ordine dei rotori (veloce → lento)";
 "Rotore %lld" = "Rotore %lld";
