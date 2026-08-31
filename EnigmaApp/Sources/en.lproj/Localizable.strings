@@ -1,0 +1,62 @@
+/* ============================================================
+   Enigma — English
+   ============================================================ */
+
+/* App title */
+"Enigma" = "Enigma";
+
+/* ContentView */
+"es. HELLO WORLD" = "e.g. HELLO WORLD";
+"Testo in chiaro" = "Plaintext";
+"Testo cifrato" = "Ciphertext";
+"Blocchi da 5" = "Blocks of 5";
+"Condividi messaggio" = "Share message";
+"Usa come testo in chiaro" = "Use as plaintext";
+"Pulisci" = "Clear";
+"Configurazione non valida" = "Invalid configuration";
+"Configurazione" = "Configuration";
+"Ordine rotori" = "Rotor order";
+"Posizioni" = "Positions";
+"Anelli (ring)" = "Rings";
+"Riflettore" = "Reflector";
+"Cavi plugboard" = "Plugboard cables";
+"Rotori" = "Rotors";
+"Pannello a prese" = "Plugboard";
+"Messaggi salvati" = "Saved messages";
+
+/* Tab */
+"Macchina" = "Machine";
+"Archivio" = "Archive";
+"Impostazioni" = "Settings";
+"Riepilogo" = "Summary";
+
+/* RotorSettingsView */
+"Ordine dei rotori (veloce → lento)" = "Rotor order (fast → slow)";
+"Rotore %lld" = "Rotor %lld";
+"Posizioni iniziali" = "Initial positions";
+"Ring settings (Ringstellung)" = "Ring settings (Ringstellung)";
+"Il motore replica la Enigma M3 reale: i rotori hanno un intaglio (I→Q, II→E, III→V, IV→J, V→Z) che fa avanzare il rotore successivo, con double stepping. Il ring setting (Ringstellung) sposta l'intaglio e il cablaggio rispetto all'alfabeto." = "The engine replicates the real Enigma M3: the rotors have a notch (I→Q, II→E, III→V, IV→J, V→Z) that advances the next rotor, with double stepping. The ring setting (Ringstellung) shifts the notch and wiring relative to the alphabet.";
+
+/* PlugboardSettingsView */
+"Prima lettera" = "First letter";
+"Seconda lettera" = "Second letter";
+"10 coppie di lettere collegate da cavi. Le coppie con lettere uguali non effettuano scambi." = "10 pairs of letters connected by cables. Pairs with equal letters perform no swap.";
+
+/* ReflectorSettingsView */
+"Il riflettore rispedisce il segnale attraverso i rotori, rendendo Enigma simmetrica (cifratura = decifratura). Il modello B è il più diffuso; il C è una variante più rara." = "The reflector sends the signal back through the rotors, making Enigma symmetric (encryption = decryption). Model B is the most common; C is a rarer variant.";
+
+/* MessagesView */
+"Salva" = "Save";
+"Nessun messaggio salvato" = "No saved messages";
+"Cifra un testo e premi + per salvarlo." = "Encrypt a text and tap + to save it.";
+"(senza testo)" = "(no text)";
+
+/* MachineView */
+"Premi %@" = "Press %@";
+
+/* Stringhe costruite a runtime (formato) */
+"share.template" = "Enigma M3 — message\n\nPlaintext: %@\nCiphertext: %@\n\nConfiguration:\nrotors %@ · positions %@ · rings %@\nreflector %@ · plugboard %@/10";
+"message.summary" = "ref %@ · rot %@ · pos %@";
+"Posizione rotori: %@ · %@ · %@" = "Rotor position: %@ · %@ · %@";
+"Lettera %@ usata in più cavi della plugboard" = "Letter %@ used in more than one plugboard cable";
+"Rotore %@ selezionato più volte" = "Rotor %@ selected more than once";

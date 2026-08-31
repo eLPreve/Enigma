@@ -1,0 +1,63 @@
+/* ============================================================
+   Enigma — Italian (source language)
+   Le chiavi corrispondono alle stringhe letterali nel codice.
+   ============================================================ */
+
+/* App title */
+"Enigma" = "Enigma";
+
+/* ContentView */
+"es. HELLO WORLD" = "es. HELLO WORLD";
+"Testo in chiaro" = "Testo in chiaro";
+"Testo cifrato" = "Testo cifrato";
+"Blocchi da 5" = "Blocchi da 5";
+"Condividi messaggio" = "Condividi messaggio";
+"Usa come testo in chiaro" = "Usa come testo in chiaro";
+"Pulisci" = "Pulisci";
+"Configurazione non valida" = "Configurazione non valida";
+"Configurazione" = "Configurazione";
+"Ordine rotori" = "Ordine rotori";
+"Posizioni" = "Posizioni";
+"Anelli (ring)" = "Anelli (ring)";
+"Riflettore" = "Riflettore";
+"Cavi plugboard" = "Cavi plugboard";
+"Rotori" = "Rotori";
+"Pannello a prese" = "Pannello a prese";
+"Messaggi salvati" = "Messaggi salvati";
+
+/* Tab */
+"Macchina" = "Macchina";
+"Archivio" = "Archivio";
+"Impostazioni" = "Impostazioni";
+"Riepilogo" = "Riepilogo";
+
+/* RotorSettingsView */
+"Ordine dei rotori (veloce → lento)" = "Ordine dei rotori (veloce → lento)";
+"Rotore %lld" = "Rotore %lld";
+"Posizioni iniziali" = "Posizioni iniziali";
+"Ring settings (Ringstellung)" = "Ring settings (Ringstellung)";
+"Il motore replica la Enigma M3 reale: i rotori hanno un intaglio (I→Q, II→E, III→V, IV→J, V→Z) che fa avanzare il rotore successivo, con double stepping. Il ring setting (Ringstellung) sposta l'intaglio e il cablaggio rispetto all'alfabeto." = "Il motore replica la Enigma M3 reale: i rotori hanno un intaglio (I→Q, II→E, III→V, IV→J, V→Z) che fa avanzare il rotore successivo, con double stepping. Il ring setting (Ringstellung) sposta l'intaglio e il cablaggio rispetto all'alfabeto.";
+
+/* PlugboardSettingsView */
+"Prima lettera" = "Prima lettera";
+"Seconda lettera" = "Seconda lettera";
+"10 coppie di lettere collegate da cavi. Le coppie con lettere uguali non effettuano scambi." = "10 coppie di lettere collegate da cavi. Le coppie con lettere uguali non effettuano scambi.";
+
+/* ReflectorSettingsView */
+"Il riflettore rispedisce il segnale attraverso i rotori, rendendo Enigma simmetrica (cifratura = decifratura). Il modello B è il più diffuso; il C è una variante più rara." = "Il riflettore rispedisce il segnale attraverso i rotori, rendendo Enigma simmetrica (cifratura = decifratura). Il modello B è il più diffuso; il C è una variante più rara.";
+
+/* MessagesView */
+"Salva" = "Salva";
+"Nessun messaggio salvato" = "Nessun messaggio salvato";
+"Cifra un testo e premi + per salvarlo." = "Cifra un testo e premi + per salvarlo.";
+"(senza testo)" = "(senza testo)";
+
+/* MachineView */
+"Premi %@" = "Premi %@";
+
+/* Stringhe costruite a runtime (formato) */
+"share.template" = "Enigma M3 — messaggio\n\nTesto in chiaro: %@\nTesto cifrato: %@\n\nConfigurazione:\nrotori %@ · posizioni %@ · anelli %@\nriflettore %@ · plugboard %@/10";
+"message.summary" = "rif %@ · rot %@ · pos %@";
+"Posizione rotori: %@ · %@ · %@" = "Posizione rotori: %@ · %@ · %@";
+"Lettera %@ usata in più cavi della plugboard" = "Lettera %@ usata in più cavi della plugboard";
+"Rotore %@ selezionato più volte" = "Rotore %@ selezionato più volte";
